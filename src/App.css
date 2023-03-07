@@ -1,0 +1,38 @@
+/* #root {
+    max-width: 1280px;
+} */
+
+body {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.58%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    height: fit-content;
+    background: url('./assets/enter.png');
+    background-size: 95rem;
+    background-repeat: no-repeat;
+    background-position: -37rem 14rem;
+    background-color: #26437a;
+    width: 100%;
+    padding-bottom: 7rem;
+    /* margin-bottom: 6rem; */
+}

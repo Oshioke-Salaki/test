@@ -1,0 +1,213 @@
+.nav {
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.nav img {
+    justify-self: center;
+    /* margin-left: 35%; */
+    width: 14rem;
+}
+
+.menu-wrap {
+    position: fixed;
+    top: 1rem;
+    right: 7rem;
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* hamburger Line */
+
+.hamburger div {
+    position: relative;
+    /* flex: none; */
+    width: 100%;
+    height: 3px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+
+/* top and bottom lines */
+
+.hamburger div::before,
+.hamburger div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 3px;
+    background: inherit;
+}
+
+.hamburger div::after {
+    top: 10px;
+}
+
+
+/* toggler animation */
+
+.toggler:checked+.hamburger>div {
+    transform: rotate(135deg);
+}
+
+.toggler:checked+.hamburger>div::before,
+.toggler:checked+.hamburger>div::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.toggler:checked:hover+.hamburger>div {
+    transform: rotate(225deg);
+}
+
+
+/* show menu */
+
+
+/* tilde is used to grad an elment from the page outside the div */
+
+.menu-wrap .toggler:checked~.menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked~.menu>div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked~.menu>div>div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu>div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 400vw;
+    height: 400vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .menu>div>div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu>div>div ul li {
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.menu-wrap .menu>div>div ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.menu-wrap .menu>div>div ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: white;
+}
+
+.auth a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: white;
+}
+
+.auth a:first-child {
+    margin-right: 1rem;
+}
+
+.auth a:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.nav select {
+    width: 12rem;
+    margin-top: 1rem;
+}
+
+.nav h6 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.65rem;
+    display: flex;
+    align-items: center;
+    color: #2e4066;
+}
+
+.nav h6 img {
+    width: 4rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-top: 0.2rem;
+}
