@@ -1,5 +1,7 @@
 .prices {
     padding-top: 12rem;
+    text-align: center;
+    padding-bottom: 7rem;
 }
 
 .prices h1 {
@@ -8,4 +10,79 @@
     line-height: 2.1rem;
     color: rgb(66, 66, 66);
     margin-top: 1rem;
+    text-align: center;
+}
+
+.prices table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.prices table tbody tr td {
+    padding: 1rem 0;
+}
+
+.prices table tbody tr {
+    /* background-color: red; */
+    border-bottom: 0.4rem solid #efefef;
+}
+
+.prices table thead {
+    padding: 5rem 1.5rem;
+}
+
+.prices table thead tr {
+    background-color: #505e76;
+}
+
+.prices table thead tr th {
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+
+.serialNum {
+    font-size: 1.2rem;
+    color: #b09b99;
+}
+
+.coinName {
+    display: flex;
+    /* align-items: center; */
+    text-align: left !important;
+    padding-top: 0.5rem;
+}
+
+.coinLogo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.coinDets h2 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #2e7ad0;
+}
+
+.coinDets h2 span {
+    color: #99a6c4;
+    font-size: 1.3rem;
+}
+
+.coinDets h3 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.coinDets h3 span {
+    margin-left: 1rem;
+}
+
+.coinPrice {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: black;
 }
