@@ -1,0 +1,11 @@
+.prices {
+    padding-top: 12rem;
+}
+
+.prices h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    color: rgb(66, 66, 66);
+    margin-top: 1rem;
+}

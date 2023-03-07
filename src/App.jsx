@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Hero from './Hero';
 import AboutUs from './AboutUs';
 import Development from './Development';
+import Prices from './Prices';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </div>
       <AboutUs />
       <Development />
+      <Prices />
     </div>
   );
 }
