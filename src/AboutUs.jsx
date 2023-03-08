@@ -4,7 +4,7 @@ import './AboutUs.css';
 export default function AboutUs() {
   return (
     <div className="aboutUs">
-      <h1>ABOUT US</h1>
+      <h1 className="sectionHeader">ABOUT US</h1>
       <div className="founder">
         <div className="founderPic">
           <h2>Dan Morehead</h2>

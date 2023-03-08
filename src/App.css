@@ -36,3 +36,23 @@ a {
     padding-bottom: 7rem;
     /* margin-bottom: 6rem; */
 }
+
+.sectionHeader {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
+    color: #3e5daa;
+    margin-bottom: 6rem;
+    position: relative;
+    width: fit-content;
+}
+
+.sectionHeader::before {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    right: -3rem;
+    height: 2px;
+    width: 8rem;
+    background: #3e5daa;
+}

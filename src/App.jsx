@@ -6,6 +6,7 @@ import Hero from './Hero';
 import AboutUs from './AboutUs';
 import Development from './Development';
 import Prices from './Prices';
+import Advantages from './Advantages';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AboutUs />
       <Development />
       <Prices />
+      <Advantages />
     </div>
   );
 }
